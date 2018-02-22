@@ -1,6 +1,5 @@
 jQuery( function ( $ ) {
 
-
     setInterval( function () {
 
         var options           = { minSize: 10, maxSize: 20, color: '#ddd' };
@@ -17,6 +16,5 @@ jQuery( function ( $ ) {
         $flake.animate( { top: endPositionTop, left: endPositionLeft, opacity: 0.5 }, durationFall, 'linear', function () { $( this ).remove(); } );
 
     }, 500 );
-
 
 } );
