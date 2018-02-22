@@ -5,14 +5,16 @@ jQuery( function ( $ ) {
             <source src="./assets/audio/music.mp3" />
         </audio>
 */
-    $( '<audio />', {
+    var $audio = $( '<audio />', {
         'autoplay' : 'autoplay',
         'loop'     : 'true',
         'controls' : 'false',
         'preload'  : 'none',
         'style'    : 'display:none;',
         'html'     : $( '<source />', { 'src': './assets/audio/music.mp3' } )
-    } ).appendTo( $( 'body' ) );
+    } );
+    $audio.appendTo( $( 'body' ) );
+    $( 'span.audio_box' ).css( 'opacity', $audio[ 0 ].paused ? '.5' : '.3' );
 
     $( 'span.audio_box' ).on( 'click', function () {
 
