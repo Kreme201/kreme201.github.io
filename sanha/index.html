@@ -17,19 +17,31 @@
                 0% { transform: rotate( 0deg ); }
                 100% { transform: rotate( 360deg ); }
             }
-            #audio { position:fixed;width:100%;z-index:99999; }
+            .audio_box {
+                font-size: 1.5em;
+                display: block;
+                position: fixed;
+                top: .5em;
+                right: .5em;
+                border: 2px solid #000;
+                cursor: pointer;
+                line-height: 30px;
+                text-align: center;
+                padding: 5px 10px;
+                color: #000;
+                border-radius: 10px;
+                opacity: .5;
+            }
         </style>
 
     </head>
 
     <body>
-        <audio id="audio" autoplay="autoplay" loop="true" controls="true" preload="none">
-            <source src="./assets/audio/music.mp3" />
-        </audio>
+        <span class="audio_box">&#9836;</span>
 
 
 
-        <img src="./assets/images/main_image.jpg" style="width:100%;margin-top:2em;" />
+        <img src="./assets/images/main_image.jpg" style="width:100%;" />
 
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="./scripts.js"></script>
