@@ -23,11 +23,6 @@ jQuery( function ( $ ) {
 
     } );
 
-
-    var arr_symbol = [ '&#9728;', '&#8277;', '&#9733;', '&#9794;' ];
-    var symbol     = arr_symbol[ parseInt( Math.random() * 10 ) % arr_symbol.length ];
-    symbol = '&#9728;';
-
     setInterval( function () {
 
         var options           = { minSize: 10, maxSize: 15, color: '#e0dbd5' };
