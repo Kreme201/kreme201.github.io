@@ -2,44 +2,33 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>이산하 첫, 생일</title>
         <meta property="og:title" content="이산하 첫, 생일" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://kreme201.github.io/sanha/" />
-        <meta property="og:image" content="http://kreme201.github.io/sanha/assets/images/small_image.jpg" />
+        <meta property="og:url" content="//kreme201.github.io/sanha/" />
+        <meta property="og:image" content="//kreme201.github.io/sanha/assets/images/small_image.jpg" />
+
+        <link href="//use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
         <style>
-            body { margin:0;padding:0; }
-            .flake { animation: hewjeon 5s linear infinite; }
+            body { margin:0;padding:0;overflow-x:hidden; }
+            .flake { animation: hewjeon 5s linear infinite; opacity:.3; }
             @keyframes hewjeon {
                 0% { transform: rotate( 0deg ); }
                 100% { transform: rotate( 360deg ); }
             }
-            .audio_box {
-                font-size: 1.5em;
-                display: block;
-                position: fixed;
-                top: .5em;
-                right: .5em;
-                border: 2px solid #000;
-                cursor: pointer;
-                line-height: 30px;
-                text-align: center;
-                padding: 5px 10px;
-                color: #000;
-                border-radius: 10px;
-                opacity: .5;
-            }
+            .audio_box{ display:block;position:fixed;top:.5em;right:.5em;border:2px solid #000;cursor:pointer;text-align:center;padding:5px 10px;color:#000;border-radius:10px;opacity:.5; }
         </style>
 
     </head>
 
     <body>
-        <span class="audio_box">&#9836;</span>
-
-
+        <audio autoplay="autoplay" loop="true" controls="false" preload="auto" style="display:none;">
+            <source src="./assets/audio/music.mp3" />
+        </audio>
+        <span class="audio_box"><i class="fas fa-volume-up"></i></span>
 
         <img src="./assets/images/main_image.jpg" style="width:100%;" />
 
