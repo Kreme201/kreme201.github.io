@@ -2,46 +2,70 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>이산하 첫, 생일</title>
         <meta property="og:title" content="이산하 첫, 생일" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://kreme201.github.io/sanha/" />
-        <meta property="og:image" content="http://kreme201.github.io/sanha/assets/images/small_image.jpg" />
+        <meta property="og:url" content="https://kreme201.github.io/sanha/" />
+        <meta property="og:image" content="https://kreme201.github.io/sanha/assets/images/small_image.jpg" />
 
-        <style>
-            body { margin:0;padding:0; }
-            .flake { animation: hewjeon 5s linear infinite; }
-            @keyframes hewjeon {
-                0% { transform: rotate( 0deg ); }
-                100% { transform: rotate( 360deg ); }
-            }
-            .audio_box {
-                font-size: 1.5em;
-                display: block;
-                position: fixed;
-                top: .5em;
-                right: .5em;
-                border: 2px solid #000;
-                cursor: pointer;
-                line-height: 30px;
-                text-align: center;
-                padding: 5px 10px;
-                color: #000;
-                border-radius: 10px;
-                opacity: .5;
-            }
-        </style>
-
+        <link href="//use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/earlyaccess/kopubbatang.css" rel="stylesheet">
+        <link href="./style.css" rel="stylesheet">
     </head>
 
     <body>
-        <span class="audio_box">&#9836;</span>
+        <audio autoplay="autoplay" loop="true" controls="false" preload="auto" style="display:none;">
+            <source src="./assets/audio/music.mp3" />
+        </audio>
+        <span class="audio_box"><i class="fas fa-volume-up"></i></span>
 
+        <div class="wrap">
 
+            <h1 class="invitation-title">이산하<br> 첫, 생일</h1>
+            <img class="baby-pic" src="./assets/images/sanha.png" alt="이산하">
+            <p class="invitation-desc">
+                부모라는 이름으로 산하를 만나지 벌써 1년이 되었습니다.<br>
+                뜻깊은 자리 소중한 분들과 함깨 하고자 합니다.<br>
+                부디 함께 자리하셔서 사랑과 축복을 나눠주시길 바랍니다.
+            </p>
+            <div class="parents">
+                <div><span>아빠</span>이영일</div>
+                <div><span>엄마</span>정선민</div>
+            </div>
 
-        <img src="./assets/images/main_image.jpg" style="width:100%;" />
+            <div class="party-date">
+                <strong>2018년 3월 10일 토요일 오후 7시 30분<br> 더파티 김해점, 피닉스</strong>
+            </div>
+
+            <div class="location">
+                <h3 class="location-title">오시는 길</h3>
+                <h5>경남 김해시 부원동 900 아이스퀘어 쇼핑몰 3층</h5>
+                <img class="map" src="./assets/images/map.png" alt="지도">
+            </div>
+
+            <div class="transportation">
+
+                <div class="bus-section">
+                    <div class="bus"><span>버 스</span></div>
+                    <div class="bus-number">
+                        <span>일반 : 127</span>
+                        <span>간선 : 3-1, 44, 300, 300A</span>
+                        <span>지선 : 1, 1-1, 2, 2-1, 6, 7, 30, 31A, 35, 56, 58-1, 60, 61 (부원역에서 하차하시면 됩니다.)</span>
+                    </div>
+                </div>
+
+                <div class="subway-section">
+                    <div class="subway"><span>지하철</span></div>
+                    <div class="subway-station">
+                        <span>부원역 1번출구</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div><!--.wrap-->
 
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="./scripts.js"></script>

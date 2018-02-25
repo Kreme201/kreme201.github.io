@@ -1,0 +1,29 @@
+* {box-sizing: border-box;}
+body { line-height: 1; font-family: 'KoPub Batang', serif; margin: 0;font-weight: 300;}
+h1,h3,h5,p {margin: 0;}
+img { width: 100%; }
+.wrap { max-width: 920px; padding: 13% 10% 10%;margin: 0 auto;}
+.invitation-title {color: #585755;text-align: center;margin-bottom: 10%;line-height: 1.2;font-weight: 300;}
+.invitation-desc {text-align: center;margin: 5% 0; letter-spacing: -0.08em; font-size: 13px; line-height: 1.7;}
+.parents { display: flex; justify-content: space-around; font-size: 13px;margin: 6% 0 14%;}
+.parents span {font-size: 12px; font-weight: bold;display: inline-block; margin-right: 5px;}
+.party-date {font-size: 15px; text-align: center; line-height: 1.7;margin-bottom: 15%;}
+.party-date strong {font-weight: 300;}
+.location-title {position: relative;padding-left: 23px}
+.location-title:before {content:'';display: block; width: 25px; height: 25px; background: url(./assets/images/location-icon.png) no-repeat 0 0;background-size: contain;position: absolute; top: -5px; left: 0;}
+.location h5 {margin: 7% 0; font-size: 13px; font-weight: 300;text-align: center;}
+.transportation {margin-top: 5%; font-size: 13px;}
+.bus-section {display: flex; }
+.subway-section {margin-top: 10px; display: flex; }
+.bus { flex: 1; font-weight: bold; }
+.bus span {display: inline-block; line-height: 1.5;}
+.bus span:first-letter {letter-spacing: 0.5em;}
+.bus-number {flex: 5;}
+.bus-number span { display: block; line-height: 1.5;}
+.subway {font-weight: bold; flex: 1;}
+.subway-station {flex: 5;}
+
+
+.flake { animation: hewjeon 5s linear infinite; opacity:.3; }
+@keyframes hewjeon { 0% { transform: rotate( 0deg ); } 100% { transform: rotate( 360deg ); } }
+.audio_box{ display:block;position:fixed;top:10px;left:10px;border:2px solid #000;cursor:pointer;text-align:center;padding:5px 10px;color:#000;border-radius:10px;opacity:.5; }
