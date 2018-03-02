@@ -53,10 +53,10 @@ jQuery( function ( $ ) {
         var sizeFlake         = options.minSize + Math.random() * options.maxSize;
         var endPositionTop    = $( document ).height() - 40;
         var endPositionLeft   = startPositionLeft - 100 + Math.random() * 200;
-        var durationFall      = 10000;
+        var durationFall      = $( document ).height() * 10 + Math.random() * 10000;
         var $flake            = $('<i />', { class: 'flake fas fa-asterisk', style: 'display:block;position:absolute;top:0px;' } );
 
-        $flake.appendTo('body');
+        $flake.appendTo('div.wrap');
         $flake.css( { left: startPositionLeft, opacity: startOpacity, 'font-size': sizeFlake, color: options.color } )
         $flake.animate( { top: endPositionTop, opacity: 0.5 }, durationFall, 'linear', function () { $( this ).remove(); } );
 
