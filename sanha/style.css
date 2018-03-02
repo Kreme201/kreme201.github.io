@@ -1,7 +1,9 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
 * {box-sizing: border-box;}
-body { line-height: 1; font-family: 'KoPub Batang', serif; margin: 0;font-weight: 300;}
-h1,h3,h5,p {margin: 0;}
-img { width: 100%; }
+body { line-height: 1; font-family: 'Nanum Gothic', serif; margin: 0;font-weight: 300; overflow-x: hidden; }
+h1,h3,h5,p {margin: 0;z-index:10;}
+img { width: 100%;z-index:10; }
 .wrap { max-width: 920px; padding: 13% 10% 10%;margin: 0 auto;}
 .invitation-title {color: #585755;text-align: center;margin-bottom: 10%;line-height: 1.2;font-weight: 300;}
 .invitation-desc {text-align: center;margin: 5% 0; letter-spacing: -0.08em; font-size: 13px; line-height: 1.7;}
@@ -24,6 +26,7 @@ img { width: 100%; }
 .subway-station {flex: 5;}
 
 
-.flake { animation: hewjeon 5s linear infinite; opacity:.3; }
+.flake { animation: hewjeon 5s linear infinite; opacity:.3; z-index:1; }
 @keyframes hewjeon { 0% { transform: rotate( 0deg ); } 100% { transform: rotate( 360deg ); } }
 .audio_box{ display:block;position:fixed;top:10px;left:10px;border:2px solid #000;cursor:pointer;text-align:center;padding:5px 10px;color:#000;border-radius:10px;opacity:.5; }
+.photo_box{ display:block;position:fixed;top:50px;left:10px;border:2px solid #000;cursor:pointer;text-align:center;padding:5px 10px;color:#000;border-radius:10px;opacity:.5; }
