@@ -1,7 +1,5 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
 * {box-sizing: border-box;}
-body { line-height: 1; font-family: 'KoPub Batang', 'Nanum Gothic', serif; margin: 0;font-weight: 300; overflow-x: hidden; }
+body { line-height: 1; font-family: 'KoPub Batang', serif; margin: 0;font-weight: 300; overflow-x: hidden; }
 h1,h3,h5,p {margin: 0;z-index:10;}
 img { width: 100%;z-index:10; }
 .wrap { max-width: 920px; padding: 13% 10% 10%;margin: 0 auto;}
